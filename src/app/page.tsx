@@ -22,7 +22,7 @@ export default function Home() {
  Apparel in India
  and Beyond
 </p>
- <button className=""></button>
+ <button className="bg-amber-500 text-black p-4 mt-4 rounded-xl hover:bg-amber-600 transition-colors duration-200">Join now</button>
      </div>
      <div className="img w-1/2 p-2 hover:cursor-zoom-in ">
   <Image
