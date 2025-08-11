@@ -1,8 +1,11 @@
 import Image from "next/image";
+import Navbar from "./navbar";
 
 export default function Home() {
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+      <Navbar />
+
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
@@ -50,6 +53,9 @@ export default function Home() {
             Read our docs
           </a>
         </div>
+        
+        <div className="w-full h-auto blackdrop-blur-sm rounded-2xl"><h1 className="text-4xl font-thin text-center text-amber-300 sm:text-left animate-ping">Welcome to darzi ur ai powered chatbot</h1></div>
+
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
