@@ -1,7 +1,13 @@
 import Link from "next/link";
+
+import * as React from "react"
+import { Moon, Sun } from "lucide-react"
+import { useTheme } from "next-themes"
+
 export default function Navbar() {
+  const { setTheme } = useTheme()
   return (
-    <div className="w-full h-auto backdrop-blur-sm bg-white/80 shadow-lg rounded-2xl px-6 py-3">
+    <div className="w-full h-auto backdrop-blur-sm bg-white/80 shadow-lg rounded-2xl px-5 py-3">
       <div className="flex flex-wrap items-center justify-between">
         
      
@@ -17,6 +23,21 @@ export default function Navbar() {
           <a href="/register" className="bg-indigo-600 text-white px-4 py-1 rounded-lg hover:bg-indigo-700 transition-colors duration-200">
             Register
           </a>
+         <div className="flex items-center">
+           <button
+             onClick={() => setTheme("light")}
+             className="p-2 rounded-lg hover:bg-indigo-100 transition-colors duration-200"
+           >
+             <Sun className="w-5 h-5" />
+           </button>
+           <button
+             onClick={() => setTheme("dark")}
+             className="p-2 rounded-lg hover:bg-indigo-100 transition-colors duration-200"
+           >
+             <Moon className="w-5 h-5" />
+           </button>
+         </div>
+
         </div>
 
       </div>
