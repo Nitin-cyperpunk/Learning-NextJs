@@ -4,12 +4,13 @@ import Image from "next/image";
 import Navbar from "./navbar";
 import img1 from "./img1.jpg";
 import Cards from "./cards";
+import Heading from "./heading";
 
 const cardData = new Array(4).fill(null).map((_, idx) => idx + 1);
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+    <div className="flex flex-col items-center justify-items-center min-h-screen p-8 pb-5 gap-4 sm:p-20">
       <Navbar />
   <div className="w-full flex h-screen  bg-[url('https://images.unsplash.com/photo-1501962973019-d980bc576111?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dGFpbG9yJTIwYmd8ZW58MHwwfDB8fHww')] bg-cover bg-center">
      <div className="text w-1/2 text-left p-4">
@@ -37,11 +38,16 @@ export default function Home() {
 </div>
 
     </div>
-<div className="w-full h-[500px] gap-2 flex flex-row  p-2 mt-[40%] overflow-x-hidden sm:h-auto">
+    <div className="div mt-1 w-full h-auto flex items-center justify-center">
+  <Heading h1="Welcome to ai powered Tailor Marketplace" />
+</div>
+<div className="w-full h-[500px] gap-2 flex flex-row  p-2  overflow-x-hidden sm:h-auto">
   {cardData.map((item, idx) => (
     <Cards key={idx} number={item} />
   ))}
 </div>
+
+
     </div>
     
     
