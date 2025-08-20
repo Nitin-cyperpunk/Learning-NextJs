@@ -1,4 +1,4 @@
-
+ 
 "use client";
 import Image from "next/image";
 import Navbar from "./navbar";
@@ -10,6 +10,7 @@ const cardData = new Array(4).fill(null).map((_, idx) => idx + 1);
 
 export default function Home() {
   return (
+    
     <div className="flex flex-col items-center justify-items-center min-h-screen  gap-1 ">
 
   <div className="w-full flex flex-col h-screen   bg-[url('https://images.unsplash.com/photo-1501962973019-d980bc576111?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dGFpbG9yJTIwYmd8ZW58MHwwfDB8fHww')] bg-cover bg-center">
@@ -19,7 +20,8 @@ export default function Home() {
      <div className="w-full h-auto flex flex-row">
          <div className="text w-1/2 text-left p-4">
    
-      <h1 className="text-6xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent font-light">Unlocking the AI-Powered Tailor Marketplace
+      <h1 className="text-6xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent font-light">
+        Unlocking the AI-Powered Tailor Marketplace
 </h1>
 <h4 className="text-3xl text-amber-300 font-thin mt-4">Bridging
  Tradition with
@@ -53,17 +55,16 @@ export default function Home() {
     <Cards key={idx} number={item} />
   ))}
 </div>
-<div className="page2">
+<div className="page2 w-full p-4">
   <Heading h1="Explore Our Services" />
-  <p className="text-lg text-gray-700 ">
+  <p className="text-lg text-center text-gray-700 ">
     Discover a wide range of tailoring services powered by AI technology.
   </p>
-  <ul className="list-disc list-inside">
-    <li>Personalized clothing recommendations</li>
-    <li>Virtual fitting room experience</li>
-    <li>AI-driven fabric selection</li>
-    <li>Seamless online ordering process</li>
-  </ul>
+  
+    <p className="text-lg text-center text-gray-600 ">
+      Our platform connects you with skilled tailors who use AI-driven tools to create custom garments that fit your unique style and measurements.
+    </p>
+
 </div>
 
     </div>
