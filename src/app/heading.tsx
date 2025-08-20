@@ -28,13 +28,7 @@ export default function HomePage({ h1 }: HomePageProps) {
 
       // Animate the characters
       gsap.from(split.chars, {
-          _y: 20,
-          get y() {
-              return this._y;
-          },
-          set y(value) {
-              this._y = value;
-          },
+        y: 20,
         autoAlpha: 0, // autoAlpha is like opacity but also sets visibility to 'hidden' when opacity is 0
         stagger: 0.05,
         duration: 0.5,
@@ -55,7 +49,7 @@ export default function HomePage({ h1 }: HomePageProps) {
       <h1 id="heading" style={{ opacity: 0, fontSize: '3rem' }}>
         {h1}
       </h1>
-      <p>This page uses the GSAP SplitText effect.</p>
+     
     </main>
   );
 }

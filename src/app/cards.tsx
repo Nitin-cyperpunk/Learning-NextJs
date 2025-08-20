@@ -42,8 +42,8 @@ export default function Home() {
   }, 1000);
 
   return (
-    <div className="flex flex-row items-center justify-center p-4 mt-24">
-      <div className="flex flex-col items-center justify-center w-full h-auto  ">
+    <div className="flex flex-row items-center justify-center p-4 mt-4 overflow-hidden">
+      <div className="flex flex-col items-center justify-center w-full h-[500px]   ">
         {img ? (
           <>
             <img
